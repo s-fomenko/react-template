@@ -46,7 +46,7 @@
       "prettier --check"
     ],
     "*.css": [
-      "stylelint"
+      "stylelint --fix"
     ]
   },
   "browserslist": {
