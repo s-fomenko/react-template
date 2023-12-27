@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2022: true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -8,6 +8,7 @@ module.exports = {
     'plugin:perfectionist/recommended-natural',
     'plugin:prettier/recommended'
   ],
+  globals: { 'JSX': true },
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'simple-import-sort'],
@@ -17,6 +18,11 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'prettier/prettier': 'error',
+    'no-shadow': 'off',
+    'no-debugger': 'error',
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
+    'prefer-template': 'warn',
+    'no-param-reassign': 'error',
     'perfectionist/sort-imports': 'off',
     'perfectionist/sort-named-imports': 'off',
     'simple-import-sort/imports': [
