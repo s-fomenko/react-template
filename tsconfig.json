@@ -12,6 +12,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "moduleDetection": "force",
+    "forceConsistentCasingInFileNames": false,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
